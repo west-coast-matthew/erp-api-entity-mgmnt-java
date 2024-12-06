@@ -1,0 +1,16 @@
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/ErpApiDemoApplication.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/AppConfiguration.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/controller/OperationCodeController.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/controller/TankMgmntController.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/controller/TankTypeMgmntController.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/controller/WorkOrderStatusMgmntController.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/OperationCodeMgmntService.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/TankMgmntService.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/TankStatusMgmntService.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/TankTypeMgmntService.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/WorkOrderStatusMgmntService.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/impl/OperationCodeMgmntServiceImpl.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/impl/TankMgmntServiceImpl.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/impl/TankStatusMgmntServiceImpl.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/impl/TankTypeMgmntServiceImpl.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/service/impl/WorkOrderStatusMgmntServiceImpl.java

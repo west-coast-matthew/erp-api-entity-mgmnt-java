@@ -1,0 +1,53 @@
+name: Deploy to my VPS
+on:
+  push:
+    branches: [develop]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run install
+        run: npm install --frozen-lockfile
+
+      - name: Run build
+        run: npm run build
+        
+      - uses: actions/checkout@v4
+      - name: SSH to server and Deploy App
+        uses: appleboy/ssh-action@master
+        with:
+          node-version: "20"
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            npm --help
+            pm2 list
+            nvm use 20
+            node -v
+            echo 'Changing directory'
+            cd matthewdalby.com
+            echo 'Performing pull operation'
+            git pull
+            echo 'Executing install'
+            npm install
+            echo 'Performing optimized build...'
+            npm run build
+            
+            echo 'Build complete!'
+            
+           
