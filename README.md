@@ -1,3 +1,5 @@
+![Alt text](erp-api-entity-java.png)
+
 # ERP Entity Management API (Java)
 
 ## Description
@@ -31,10 +33,10 @@ mvn spring-boot:build-image
 docker run -p 8080:8080 native-test:0.0.1-SNAPSHOT
 
 
-## Enhancment log
+## Enhancement log
 8/8/2024
 	Initial project setup w/w single API (Tank)
 	Configured GitHub action for CI deployment to server
 	
 ## Additional information 
-For information details on the purpose of the project and details of the problem domain we are working with here, you can visit [https://www.matthewdalby.com]()
+For information details on the purpose of the project and details of the problem domain we are working with here, you can visit [https://www.matthewdalby.dev]()
