@@ -1,4 +1,4 @@
-![Alt text](erp-api-entity-java.png)
+![Project Logo](./images/erp-api-entity-java.png)
 
 # ERP Entity Management API (Java)
 
