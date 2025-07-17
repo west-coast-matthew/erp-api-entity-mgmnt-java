@@ -21,18 +21,21 @@ public interface TankTypeMgmntService {
 	/**
 	 * 
 	 */
-	public void archiveTankType(long id);
+	public void archiveTankType(Long id);
 	
 	/**
 	 * 
 	 * @param id
 	 * @return
 	 */
-	public TankType getById(int id);
+	public TankType getById(Long id);
 	
 	/**
 	 * 
 	 * @return
 	 */
-	public List<TankType>getTankTypes();
+	public Iterable<TankType>getTankTypes();
+	
+	
+	public boolean exists(Long id);
 }

@@ -21,13 +21,14 @@ public interface OperationCodeMgmntService {
 	/**
 	 * 
 	 */
-	public void archiveOperationCode(long id);
+	public void archiveOperationCode(Long id);
 	
 	/**
 	 * 
 	 * @param id
 	 * @return
 	 */
-	public OperationCode getById(int id);
+	public OperationCode getById(Long id);
 	
+	public boolean exists(Long id);
 }

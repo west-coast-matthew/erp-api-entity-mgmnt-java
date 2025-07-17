@@ -22,13 +22,15 @@ public interface TankStatusMgmntService {
 	/**
 	 * 
 	 */
-	public void archiveTankStatus(long id);
+	public void archiveTankStatus(Long id);
 	
 	/**
 	 * 
 	 * @param id
 	 * @return
 	 */
-	public TankStatus getById(int id);
+	public TankStatus getById(Long id);
+	
+	public boolean exists(Long id);
 	
 }

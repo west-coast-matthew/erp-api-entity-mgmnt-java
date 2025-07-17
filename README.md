@@ -17,7 +17,7 @@ This project relies on the 'erp-core' maven module, which needs to be built firs
 
 `mvn install`
 
-And then the following command will build the executable jar, which must be build within this project's directory.
+And then the following command will build the executable jar, which publishes the package locally.
 `mvn package`
 
 

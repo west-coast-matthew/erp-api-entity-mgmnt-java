@@ -31,20 +31,21 @@ public interface TankMgmntService{
 	/**
 	 * 
 	 */
-	public void archiveTank(long id);
+	public void archiveTank(Long id);
 	
 	/**
 	 * 
 	 * @param id
 	 * @return
 	 */
-	public Tank getById(int id);
+	public Tank getById(Long id);
 	
 	/**
 	 * 
 	 * @return
 	 */
-	public List<Tank>getTanks();
+	public Iterable<Tank>getTanks();
 	
+	public boolean exists(Long id);
 	
 }

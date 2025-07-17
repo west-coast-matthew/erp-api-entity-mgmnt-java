@@ -1,6 +1,6 @@
-package com.wc_matthew.demo.erp.entity_mgmnt.controller.sort;
-
+package com.wc_matthew.demo.erp.entity_mgmnt.controller;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +14,7 @@ import com.wc_matthew.demo.erp.entity_mgmnt.service.OperationCodeMgmntService;
 
 @RestController
 @RequestMapping("/mgmnt/operationCode")
-public class OperationCodeMgmntController {
+public class OperationCodeMgmntController extends BaseController{
 	
 
     @Autowired
@@ -22,25 +22,28 @@ public class OperationCodeMgmntController {
 
     @GetMapping
     public Iterable<OperationCode> getOperationCodes(){
-    	
     	Iterable<OperationCode> opCodes  = opCodeService.listOperationCodes();
-    	
         return opCodes;
     } 
     
     @PostMapping    
-    public OperationCode post(OperationCode opCode){
-    	return opCodeService.createOperationCode(opCode);
+    public ResponseEntity<OperationCode> post(OperationCode opCode){
+    	OperationCode result = opCodeService.createOperationCode(opCode);
+    	return ResponseEntity.created(getLocationRef(result.getId())).headers(getHeaders()).body(result);
     }
 
     @PutMapping
-    public OperationCode put(OperationCode opCode){
-    	return opCodeService.updateOperationCode(opCode);
+    public ResponseEntity<OperationCode> put(OperationCode opCode){
+    	OperationCode result =  opCodeService.updateOperationCode(opCode);
+    	return ResponseEntity.created(getLocationRef(result.getId())).headers(getHeaders()).body(result);
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable("id") Long id){
+    public ResponseEntity<Void> delete(@PathVariable("id") Long id){
     	opCodeService.archiveOperationCode(id);
+    	return ResponseEntity.noContent().build();
     }
+    
+    
     
 }

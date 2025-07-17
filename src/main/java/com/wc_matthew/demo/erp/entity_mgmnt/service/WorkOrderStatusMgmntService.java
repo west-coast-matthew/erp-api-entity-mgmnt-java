@@ -11,22 +11,24 @@ public interface WorkOrderStatusMgmntService {
 	 * @param tank
 	 * @return
 	 */
-	WorkOrderStatus createWorkOrderStatus(WorkOrderStatus workOrderStatus);
+	WorkOrderStatus createWorkOrderStatus(WorkOrderStatus woStatus);
 	
 	/**
 	 * 
 	 */
-	public WorkOrderStatus updateWorkOrderStatus(WorkOrderStatus workOrderStatus);
+	public WorkOrderStatus updateWorkOrderStatus(WorkOrderStatus woStatus);
 	
 	/**
 	 * 
 	 */
-	public void archiveWorkOrderStatus(long id);
+	public void archiveWorkOrderStatus(Long id);
 	
 	/**
 	 * 
 	 * @param id
 	 * @return
 	 */
-	public WorkOrderStatus getById(int id);
+	public WorkOrderStatus getById(Long id);
+	
+	public boolean exists(Long id);
 }
